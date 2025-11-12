@@ -10,10 +10,15 @@ class App extends Component {
     state = {
         movies: ['The Shawshank Redemption', 'The Godfather', 'Pulp Fiction'],
         plot: 'Framed in the 1940s for double murder, upstanding banker Andy Dufresne begins a new life at the Shawshank prison',
-        actors: ['Tim Robbins', 'Morgan Freeman', 'Bob Gunton'],
+        actors: [
+            'Tim Robbins',
+            'Morgan Freeman',
+            'Bob Gunton',
+            'William Sadler',
+        ],
         country: 'USA',
         studio: 'Columbia Pictures',
-        studioAdress: 'New York, New York',
+        studioAdress: 'New York, USA',
         directorEmail: 'frank_darabont@gmail.com',
         genre: 'Drama, Crime',
         releaseDate: '1994-09-23',
@@ -28,10 +33,14 @@ class App extends Component {
                 <Main
                     plot={this.state.plot}
                     actors={this.state.actors}
-                    info={this.state.info}
+                    country={this.state.country}
+                    studio={this.state.studio}
+                    genre={this.state.genre}
+                    releaseDate={this.state.releaseDate}
                 />
                 <Footer
-                    info={this.state.info}
+                    studioAdress={this.state.studioAdress}
+                    directorEmail={this.state.directorEmail}
                     ownerNumber={this.state.ownerNumber}
                 />
             </>
