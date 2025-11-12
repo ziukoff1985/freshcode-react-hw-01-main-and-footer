@@ -2,10 +2,7 @@ import { Component } from 'react';
 
 export class Footer extends Component {
     render() {
-        const {
-            info: { studioAdress, directorEmail },
-            ownerNumber,
-        } = this.props;
+        const { studioAdress, directorEmail, ownerNumber } = this.props;
         return (
             <>
                 <p>Studio address: {studioAdress}</p>

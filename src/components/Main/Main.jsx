@@ -2,11 +2,8 @@ import { Component } from 'react';
 
 export class Main extends Component {
     render() {
-        const {
-            plot,
-            actors,
-            info: { country, studio, genre, releaseDate },
-        } = this.props;
+        const { plot, actors, country, studio, genre, releaseDate } =
+            this.props;
         return (
             <>
                 <h2>Movie: The Shawshank Redemption</h2>
