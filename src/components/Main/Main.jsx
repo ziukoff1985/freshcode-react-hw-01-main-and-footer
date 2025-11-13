@@ -4,17 +4,8 @@ import styles from './Main.module.css';
 export class Main extends Component {
     render() {
         console.log(this.props);
-        const {
-            primaryInfo: {
-                plot,
-                actors,
-                movie,
-                country,
-                studio,
-                genre,
-                releaseDate,
-            },
-        } = this.props;
+        const { movie, plot, actors, country, studio, genre, releaseDate } =
+            this.props.primaryInfo;
         return (
             <div className={styles.container}>
                 <h2 className={styles.title}>📽️ {movie} 📽️</h2>
@@ -35,10 +26,22 @@ export class Main extends Component {
                     <div>
                         <h3>Movie info</h3>
                         <ul className={styles.movieInfo}>
-                            <li>Country: {country}</li>
-                            <li>Studio: {studio}</li>
-                            <li>Genre: {genre}</li>
-                            <li>Release date: {releaseDate}</li>
+                            <li>
+                                <span>Country: </span>
+                                {country}
+                            </li>
+                            <li>
+                                <span>Studio: </span>
+                                {studio}
+                            </li>
+                            <li>
+                                <span>Genre: </span>
+                                {genre}
+                            </li>
+                            <li>
+                                <span>Release: </span>
+                                {releaseDate}
+                            </li>
                         </ul>
                     </div>
                 </div>

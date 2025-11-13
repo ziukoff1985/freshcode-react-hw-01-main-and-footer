@@ -52,3 +52,7 @@
 .movieInfo {
     text-align: start;
 }
+
+.movieInfo li span {
+    font-weight: bold;
+}

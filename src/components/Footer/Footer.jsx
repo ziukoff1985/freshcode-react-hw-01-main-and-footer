@@ -3,9 +3,8 @@ import styles from './Footer.module.css';
 
 export class Footer extends Component {
     render() {
-        const {
-            secondaryInfo: { studioAdress, directorEmail, ownerNumber },
-        } = this.props;
+        const { studioAdress, directorEmail, ownerNumber } =
+            this.props.secondaryInfo;
         return (
             <ul className={styles.footer}>
                 <li>
