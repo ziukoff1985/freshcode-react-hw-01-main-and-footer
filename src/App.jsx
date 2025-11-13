@@ -20,7 +20,7 @@ class App extends Component {
         country: 'USA',
         studio: 'Columbia Pictures',
         genre: 'Drama, Crime',
-        releaseDate: '1994-09-23',
+        release: '1994-09-23',
     };
     secondaryInfo = {
         studioAdress: 'New York, USA',

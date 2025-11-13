@@ -3,7 +3,7 @@ import styles from './Main.module.css';
 
 export class Main extends Component {
     render() {
-        const { movie, plot, actors, country, studio, genre, releaseDate } =
+        const { movie, plot, actors, country, studio, genre, release } =
             this.props.primaryInfo;
         return (
             <div className={styles.container}>
@@ -39,7 +39,7 @@ export class Main extends Component {
                             </li>
                             <li>
                                 <span>Release: </span>
-                                {releaseDate}
+                                {release}
                             </li>
                         </ul>
                     </div>
