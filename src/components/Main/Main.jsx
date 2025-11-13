@@ -3,11 +3,21 @@ import styles from './Main.module.css';
 
 export class Main extends Component {
     render() {
-        const { plot, actors, country, studio, genre, releaseDate } =
-            this.props;
+        console.log(this.props);
+        const {
+            primaryInfo: {
+                plot,
+                actors,
+                movie,
+                country,
+                studio,
+                genre,
+                releaseDate,
+            },
+        } = this.props;
         return (
             <div className={styles.container}>
-                <h2 className={styles.title}>📽️ The Shawshank Redemption 📽️</h2>
+                <h2 className={styles.title}>📽️ {movie} 📽️</h2>
 
                 <p className={styles.plot}>
                     <span className={styles.span}>Plot:</span> {plot}

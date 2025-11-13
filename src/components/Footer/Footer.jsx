@@ -3,19 +3,21 @@ import styles from './Footer.module.css';
 
 export class Footer extends Component {
     render() {
-        const { studioAdress, directorEmail, ownerNumber } = this.props;
+        const {
+            secondaryInfo: { studioAdress, directorEmail, ownerNumber },
+        } = this.props;
         return (
-            <div className={styles.footer}>
-                <p>
+            <ul className={styles.footer}>
+                <li>
                     <span>Studio address:</span> {studioAdress}
-                </p>
-                <p>
+                </li>
+                <li>
                     <span>Director email:</span> {directorEmail}
-                </p>
-                <p>
+                </li>
+                <li>
                     <span>Site owner number:</span> {ownerNumber}
-                </p>
-            </div>
+                </li>
+            </ul>
         );
     }
 }
