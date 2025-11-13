@@ -8,13 +8,13 @@ export class Footer extends Component {
         return (
             <ul className={styles.footer}>
                 <li>
-                    <span>Studio address:</span> {studioAdress}
+                    <span>Studio address: </span> {studioAdress}
                 </li>
                 <li>
-                    <span>Director email:</span> {directorEmail}
+                    <span>Director email: </span> {directorEmail}
                 </li>
                 <li>
-                    <span>Site owner number:</span> {ownerNumber}
+                    <span>Site owner number: </span> {ownerNumber}
                 </li>
             </ul>
         );

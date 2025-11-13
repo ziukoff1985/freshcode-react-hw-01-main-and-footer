@@ -3,7 +3,6 @@ import styles from './Main.module.css';
 
 export class Main extends Component {
     render() {
-        console.log(this.props);
         const { movie, plot, actors, country, studio, genre, releaseDate } =
             this.props.primaryInfo;
         return (
